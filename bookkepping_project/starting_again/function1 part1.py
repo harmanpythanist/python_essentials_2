@@ -26,7 +26,7 @@ def import_bank_transactions(file_path, file_type='csv'):
     return df
 
 
-file = import_bank_transactions("D://test.csv", "excel")
+file = import_bank_transactions("D://test.csv", "csv")
 print(file)
 
 
