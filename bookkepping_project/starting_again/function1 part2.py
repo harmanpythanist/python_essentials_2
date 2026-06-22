@@ -56,9 +56,8 @@ def import_bank_transactions(file_path, file_type='csv'):
     # Clean description field
     df['description'] = df['description'].str.strip().str.upper()    #   '    UTILITY    BILLS    '   -> 'UTILITY BILL'
 
-    print("TEST")
+    
     df = df.sort_values('date').reset_index(drop=True)
-    print("TEST DONE")
     return df 
     
 
